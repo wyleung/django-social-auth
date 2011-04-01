@@ -127,7 +127,7 @@ class SocialAuthBackend(ModelBackend):
 
         return user
 
-    def username(self, details):
+    def username(self, details, username=None):
         """Return an unique username, if SOCIAL_AUTH_FORCE_RANDOM_USERNAME
         setting is True, then username will be a random USERNAME_MAX_LENGTH
         chars uuid generated hash
